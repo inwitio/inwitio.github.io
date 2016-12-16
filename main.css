@@ -78,7 +78,7 @@ a {
 #pattern.home .d, #pattern.home .e {
     bottom: 0
 }
-#pattern.home .a {
+#pattern.home .a.bak {
     background: linear-gradient(to top, #173472 0, #040C17 100%);
     width: 100%;
     left: 0;
@@ -86,11 +86,12 @@ a {
     height: 33vh;
 }
 
-#pattern.home .ab {
-    background: linear-gradient(to top, #173472 0, #040C17 100%);
+#pattern.home .a {
+    background: linear-gradient(to right, rgba(23,107,193,.0) 60%, rgba(23,107,193,.3) 100%);
     width: 100%;
     left: 0;
-    height: 23vh;
+    top: -20vh;
+    height: 43vh;
 }
 #pattern.home .a .backup {
     background: linear-gradient(to top, #173472 0, #040C17 100%);
@@ -107,8 +108,15 @@ a {
     visibility: hidden;
 }
 
-#pattern.home .d {
+#pattern.home .d.bak {
     background: linear-gradient(to left, rgba(139,255,230,0.65) 0, rgba(139,255,230,0) 100%);
+    width: 45%;
+    right: 0%;
+    height:20vh;
+    visibility: visible;
+}
+#pattern.home .d {
+    background: linear-gradient(to left, rgba(23,107,193,0.65) 0, rgba(23,107,193,0) 100%);
     width: 45%;
     right: 0%;
     height:20vh;
@@ -119,7 +127,7 @@ a {
     width: 30%;
     bottom:20vh;
     right: 0%;
-    height:51.7vh;
+    height:80vh;
     visibility: visible;
 }
 #pattern.home .f {
@@ -148,11 +156,12 @@ a {
     color:white;
 }
 .main-header .logo:hover{opacity:1}
-.main-header.white svg g{fill:#FFF}
-.main-header.white svg polyline{stroke:#FFF}
+.main-header .logo img{height: 45px;}
+.main-header.white svg path{fill:rgb(244, 67, 54)}
+.main-header.white svg{filter: drop-shadow( 0px 0px 1px rgba(23,52,114,1) );}
 .main-header.white #feat>span,.main-header.white nav li>a{color:rgba(255,255,255,.9)}
 .main-header.white #feat>span.active,.main-header.white #feat>span:hover,.main-header.white nav li>a.active,.main-header.white nav li>a:hover{color:#FFF}
-.main-header.feat-head svg g,.main-header.gray svg g{fill:#2F2F4F}
+.main-header.feat-head svg d,.main-header.gray svg g{fill:#2F2F4F}
 .main-header.feat-head svg polyline,.main-header.gray svg polyline{stroke:#2F2F4F}
 .main-header.feat-head #feat>span,.main-header.feat-head nav li>a,.main-header.gray #feat>span,.main-header.gray nav li>a{color:#2F2F4F}
 .main-header.feat-head #feat>span.active,.main-header.feat-head #feat>span:hover,.main-header.feat-head nav li>a.active,.main-header.feat-head nav li>a:hover,.main-header.gray #feat>span.active,.main-header.gray #feat>span:hover,.main-header.gray nav li>a.active,.main-header.gray nav li>a:hover{color:#16162F}
@@ -186,8 +195,8 @@ a {
 }
 
 .button.green{
-    background:#8BFFE6;
-    color:#006858!important
+    background:rgb(244, 67, 54);
+    color:#fff!important
 }
 .button.green:hover{
     background:#98FFE8}
@@ -245,8 +254,8 @@ a {
 .home-cta {
     font-size: 15px;
     font-weight: 700;
-    color: #005F50;
-    background: #66E9CE;
+    color: #fff;
+    background: rgb(244, 67, 54);
     letter-spacing: -.4px;
     border: none;
     height: 45px;
@@ -259,7 +268,9 @@ a {
     box-shadow: 0 2px 4px rgba(0,0,94,.3);
     margin: 0 25px 20px 0;
 }
-
+.home-cta:hover{
+    box-shadow: 0px 0px 12px rgba(0,0,94,.5);
+}
 .spline{
     padding:80px 0;
     background:#333
