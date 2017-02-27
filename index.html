@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>Inwit.io / Home</title>
         <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="Chart.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
+
     </head>
     <body>
         <div class="animsition">
@@ -64,7 +67,7 @@
                 <div class="headline wrap-b">
                     <h1>Next level investment</h1>
                         <span class="tagline">Abandon hidden fees and transaction commissions; invest with a long-term, value focused perspective.</span>
-                        <a class="home-cta" href="http://www.throughbred.com/signup">Meet with an Adivosr</a>
+                        <a class="home-cta" href="http://www.throughbred.com/signup">Meet with an Advisor</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +86,11 @@
             </section>
             <section class="spline transparent feature-section skew skew-gray" id="investmentPrinciples">
                 <div class="wrap split split-520">
-                    <div class="left m-anim chron">
+                    <div class="left m-text">
+                        <div class="chart-holder1">
+                                <canvas id="myChart2"></canvas>
+                                <script src="myChart2.js"></script>
+                        </div>
                     </div>
                     <div class="right m-text">
                         <h2>Investment Principles</h2>
@@ -101,7 +108,12 @@
                         <a href="http://www.thoroughbrednational.com/execution" class="chevron ui-sb">
                         "Find out more"</a>
                     </div>
-                    <div class="right m-anim chron">
+                    <div class="right m-text">
+                        
+                            <div class="chart-holder2">
+                                <canvas id="myChart"></canvas>
+                                <script src="myChart.js"></script>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -136,9 +148,8 @@
             </section>
             <div class="spline f_cta"></div>
             <footer></footer>
+            <a href="//www.iubenda.com/privacy-policy/7976091" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
         </div>
         <div id="outdated"></div>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
     </body>
 </html>
