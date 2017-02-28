@@ -11,21 +11,25 @@ var iosRed = "#FF3824";
 var data = {
     labels: [
         "Equity",
-        "Bonds",
-        "Cash",
-        "Commodities"
-    ],
+        "Bonds"],//,"Cash","Commodities"],
     datasets: [
         {
-            data: [59, 31, 6, 4],
-            backgroundColor: [iosLtBlue, iosYellow, iosOrange, iosPink],
-            hoverBackgroundColor: [iosLtBlue, iosYellow, iosOrange, iosPink]
-        }],
-    borderColor: ["#fff", "#fff", "#fff", "#fff"],
-    borderWidth: [20, 20, 20, 20],
+            data: [59, 31],//, 6, 4],
+            backgroundColor: [iosLtBlue, iosYellow], //, iosOrange, iosPink],
+            hoverBackgroundColor: [iosLtBlue, iosYellow], //, iosOrange, iosPink],
+            borderWidth: [10, 10], //, 10, 10],
+            hoverBorderColor: ["#fff", "#fff"], //, "#fff", "#fff"],
+            hoverBorderWidth: [10, 10], //, 10, 10]
+        }]
+
 };
 var options = {
     tooltips: {enabled: false},
+    cutoutPercentage: 33,
+    rotation: -.5*Math.PI,
+    animation: {
+        animateScale: true
+    },
     legend: {
         display: true,
         position: "bottom",
@@ -35,4 +39,4 @@ var options = {
     }
 };
 
-var myPieChart = new Chart(ctx, {type: 'pie', data: data, options: options});
+var myPieChart = new Chart(ctx, {type: 'doughnut', data: data, options: options});
